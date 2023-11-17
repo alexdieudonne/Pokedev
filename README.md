@@ -39,7 +39,7 @@ Ce sera:
 - Il y a une erreur que vous trouverez lorsque vous lancerez les tests. C'est une erreur que je n'ai pas pu résoudre à temps. Cependant, les tests passent bien.
 Il s'agit de  `Cannot log after tests are done. Did you forget to wait for something async in your test?`
 - Les tests sont dans des dossier `__tests__` à la racine des composants
-- La navigation se retrouvera dans le dossier `app` pour les `paths` pour essayer de structurer au mieux le projet.
+- La navigation se retrouvera dans le dossier `app` pour les `paths` et pour essayer de structurer au mieux le projet.
 - Le projet contient un semblant de `dark-mode` :)
 - Ma manière d'architecturer mon projet se base sur le principe de Class/Functional Component et Sous component, cela me permet de mieux regrouper mes composants en fonction du screen qui les utilise.
 ```
