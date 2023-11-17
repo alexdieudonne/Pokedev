@@ -36,6 +36,7 @@ Ce sera:
 
 ### Autres informations
 `NB:` Certains tests n'ont pas pu être approfondi.
+`NB:` J'ai pas tester sur android !!! (Mais je pense tout fonctionne nickel.).
 - Il y a une erreur que vous trouverez lorsque vous lancerez les tests. C'est une erreur que je n'ai pas pu résoudre à temps. Cependant, les tests passent bien.
 Il s'agit de  `Cannot log after tests are done. Did you forget to wait for something async in your test?`
 - Les tests sont dans des dossier `__tests__` à la racine des composants
