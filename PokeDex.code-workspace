@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "PokeDex",
+			"path": "."
+		}
+	],
+	"settings": {
+		"jest.disabledWorkspaceFolders": [
+			"PokeDex"
+		],
+		"dotenv.enableAutocloaking": false
+	}
+}
