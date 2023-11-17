@@ -44,8 +44,9 @@ describe('src/screens/Home/components/PokemonCard', () => {
   it('renders correctly', () => {
 
     const pokemonCardComponent = create(PokemonCardComponent).toJSON() as ReactTestRendererJSON
-    const imageIllustrationPokemon = pokemonCardComponent.children![0] as ReactTestRendererJSON
-    const namePokemon = pokemonCardComponent.children![1] as ReactTestRendererJSON
+    const screen = pokemonCardComponent.children![0] as ReactTestRendererJSON
+    const imageIllustrationPokemon = screen.children![0] as ReactTestRendererJSON
+    const namePokemon = screen.children![1] as ReactTestRendererJSON
 
     expect(imageIllustrationPokemon.type).toBe('ViewManagerAdapter_ExpoImage')
     expect(imageIllustrationPokemon.props.source[0]).toEqual({ uri: '' })

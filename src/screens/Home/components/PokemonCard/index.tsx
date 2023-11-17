@@ -28,19 +28,27 @@ const PokeCard: FC<PokeCardProps> = ({ name, imageUrl, isLoading = true }) => {
     const dynamicBackgroundColor: string = colors?.platform === 'android' ? colors.dominant : colors?.platform === 'ios' ? colors.secondary : appTheme.primary
 
     return (
-        <S.PokeCard
-            color={dynamicBackgroundColor}
-            testID="poke-card"
-            activeOpacity={.9}>
-            {
-                isLoading ?
-                    (<S.PokeText color={appTheme.background}>Chargement de vos pokémons...</S.PokeText>) :
-                    (<>
-                        <S.PokeCardImage source={{ uri: imageUrl }} />
-                        <S.PokeCardText color={colors?.platform === 'android' ? colors.darkVibrant : colors?.platform === 'ios' ? colors.background : appTheme.primary}>{name}</S.PokeCardText>
-                    </>)
-            }
-        </S.PokeCard>
+        <Link href={{
+            pathname: '/detailPokemon',
+            params: {
+                name,
+                imageUrl,
+            },
+        }}  asChild>
+            <S.PokeCard
+                color={dynamicBackgroundColor}
+                testID="poke-card"
+                activeOpacity={.9}>
+                {
+                    isLoading ?
+                        (<S.PokeText color={appTheme.background}>Chargement de vos pokémons...</S.PokeText>) :
+                        (<>
+                            <S.PokeCardImage source={{ uri: imageUrl }} />
+                            <S.PokeCardText color={colors?.platform === 'android' ? colors.darkVibrant : colors?.platform === 'ios' ? colors.background : appTheme.primary}>{name}</S.PokeCardText>
+                        </>)
+                }
+            </S.PokeCard>
+        </Link>
     )
 }
 
