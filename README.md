@@ -11,7 +11,7 @@
 ### Pour installer le projet
 
 - Clone project (Cloner le projet) : ``
-- Install dependencies (Installer les dépendances) : `yarn i`
+- Install dependencies (Installer les dépendances) : `yarn install`
 - Now launch it using your favourite platform ! (Maintenant lancer le projet en choisissant votre platform)
   - IOS: `npx expo run:ios` 
   - Android: `npx expo run:android`
