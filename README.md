@@ -11,6 +11,7 @@
 ### Pour installer le projet
 
 - Clone project (Cloner le projet) : `git clone https://github.com/alexdieudonne/Pokedev.git`
+- Run this command (Lancer cette commande) : `cd Pokedev && cp .env.example .env`
 - Install dependencies (Installer les dépendances) : `yarn install`
 - Now launch it using your favourite platform ! (Maintenant lancer le projet en choisissant votre platform)
   - IOS: `npx expo run:ios` 
