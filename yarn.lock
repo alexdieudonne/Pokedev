@@ -4896,6 +4896,13 @@ dotenv@~16.0.3:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
   integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
 
+editorjs-viewer-native@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/editorjs-viewer-native/-/editorjs-viewer-native-1.0.1.tgz#f43ac2239371db7d89b98657a06ecd1fbd16d5b2"
+  integrity sha512-W2qm7Iatsel+Qn+qVhzW6k/lmjlYqPMfBzOfhBFhfIoMhzxzFttil6ZXyePHAXLzzSVDq/w8TO4Y/NqKirEQ+Q==
+  dependencies:
+    html-entities "^2.3.3"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -6242,7 +6249,7 @@ html-encoding-sniffer@^3.0.0:
   dependencies:
     whatwg-encoding "^2.0.0"
 
-html-entities@^2.3.2:
+html-entities@^2.3.2, html-entities@^2.3.3:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-2.4.0.tgz#edd0cee70402584c8c76cc2c0556db09d1f45061"
   integrity sha512-igBTJcNNNhvZFRtm8uA6xMY6xYleeDwn3PeBCkDz7tHttv4F2hsDI2aPgNERWzvRcNYHNT3ymRaQzllmXj4YsQ==

@@ -1,15 +1,15 @@
-import styled, { DefaultTheme, useTheme } from 'styled-components/native'
+import { DefaultTheme, useTheme } from 'styled-components/native'
 import { Stack } from 'expo-router'
 
 import ScreenLayout from 'src/layouts/ScreenLayout'
 import { Styles as S } from './styles'
-import { FlatList, ListRenderItem, ListRenderItemInfo, TextInput } from 'react-native'
+import { FlatList, ListRenderItem } from 'react-native'
 import Ionicons from '@expo/vector-icons/Ionicons';
 import PokeCard from './components/PokemonCard'
 import { useGetPokemonsQuery } from 'src/redux/api/apiSlice'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { PokemonQuery } from 'src/redux/types/Pokemon'
-import { useEffect, useMemo, useState } from 'react'
+import { useState } from 'react'
 import { appTheme } from 'src/assets/styles/theme'
 
 
@@ -24,8 +24,7 @@ export default function HomeScreen() {
   } = useGetPokemonsQuery({ limit: 10, page: page })
 
   const theme: DefaultTheme = useTheme()
-
-
+  
   const renderItem: ListRenderItem<PokemonQuery> = ({ item: { url, name } }) => <PokeCard key={url} isLoading={isLoading} imageUrl={url} name={name} />;
 
   return (

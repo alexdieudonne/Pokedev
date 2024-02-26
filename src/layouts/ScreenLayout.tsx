@@ -16,7 +16,7 @@ export default function ScreenLayout({ children, testID, style }: Props) {
 }
 
 const S = {
-  Wrapper: styled.View`
+  Wrapper: styled.SafeAreaView`
     flex: 1;
     background-color: ${({ theme }) => theme.background};
   `

@@ -13,7 +13,7 @@ export const Styles = {
     Subtitle: Subtitle_,
     Text: AppStyles.textStyles.Text,
     Content: styled.View` 
-        padding-horizontal: 20px;
+        padding-horizontal: 10px;
     `,
     HeaderView: styled.View`
         background-color: ${p => p.theme.background};

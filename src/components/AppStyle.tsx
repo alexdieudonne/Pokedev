@@ -29,5 +29,10 @@ export const AppStyles = {
         margin-bottom: ${p => p.theme.dimensions(15, 'px')};
       `,
 
+  },
+  viewStyles: {
+    flexView: styled.View`
+        flex: 1;
+      `,
   }
 }
